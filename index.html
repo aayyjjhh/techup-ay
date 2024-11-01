@@ -1,17 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Techup AY</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"
-    <title>TECHUPPPPPP</title>
-    <link rel="stylesheet" href="style.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Investor-Inventor Platform</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1 class="title">hellllooooooo world - I love TechUp</h1>
-    <h2> what is htmlllllll?????</h2>
-    <h3 class="title"> Woohoo</h3>
-    <p>my name is AYAY, from CSA</p>
-    <a href="https://www.csa.gov.sg">Access CSA website for more information</a>
+
+  <!-- Landing Page Section -->
+  <section class="landing-page">
+    <div class="animated-image">
+      <!-- Placeholder for animated nature-themed image -->
+    </div>
+    <div class="content">
+      <h1>Welcome to the Innovation Hub</h1>
+      <p>Connecting visionary creators with pioneering investors.</p>
+      <label for="visitor-type">I am a:</label>
+      <select id="visitor-type">
+        <option value="investor">Investor</option>
+        <option value="creator">Creator/Inventor</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- User Information Section -->
+  <section class="info-section">
+    <h2>Tell Us About Yourself</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="proposal">Your Proposal or Area of Interest:</label>
+      <textarea id="proposal" name="proposal" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
 </body>
 </html>

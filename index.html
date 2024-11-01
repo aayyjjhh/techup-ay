@@ -17,29 +17,23 @@
       <h1>Welcome to the Innovation Hub</h1>
       <p>Connecting visionary creators with pioneering investors.</p>
       <label for="visitor-type">I am a:</label>
-      <select id="visitor-type">
+      <select id="visitor-type" onchange="navigateToPage()">
+        <option value="">Select an option</option>
         <option value="investor">Investor</option>
-        <option value="creator">Creator</option>
+        <option value="creator">Creator/Inventor</option>
       </select>
     </div>
   </section>
 
-  <!-- User Information Section -->
-  <section class="info-section">
-    <h2>Tell Us About Yourself</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="proposal">Your Proposal or Area of Interest:</label>
-      <textarea id="proposal" name="proposal" rows="4" required></textarea>
-
-      <button type="submit">Submit</button>
-    </form>
-  </section>
-
+  <script>
+    function navigateToPage() {
+      const visitorType = document.getElementById("visitor-type").value;
+      if (visitorType === "investor") {
+        window.location.href = "investor.html";
+      } else if (visitorType === "creator") {
+        window.location.href = "creator.html";
+      }
+    }
+  </script>
 </body>
 </html>

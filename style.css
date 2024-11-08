@@ -6,51 +6,51 @@
   font-family: Arial, sans-serif;
 }
 
-html, body {
+body, html {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-/* Full-page GIF background */
+/* Fullscreen GIF Background */
 body {
-  background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHRuOGpnaWZ0ZjZnZHBob2gwaGozMm9iYmZ5Y280cXMxYnRqbGtueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nNFQiE5zJC02zeKBvV/giphy.gif') no-repeat center center fixed;
+  background: url('https://media.giphy.com/media/eZf2dWLqsmp5UU5e9W/giphy.gif') no-repeat center center fixed;
   background-size: cover;
 }
 
-/* Overlay for content */
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+/* Landing Page Content Styling */
+.landing-page {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-}
-
-/* Content styling */
-.content {
+  height: 100vh;
   color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
-.content h1 {
+.content {
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
 }
 
-.content p {
+p {
   font-size: 1.2em;
   margin-bottom: 20px;
 }
 
 #visitor-type {
   font-size: 1em;
-  padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  padding: 10px;
   border-radius: 5px;
+  border: none;
+  cursor: pointer;
 }

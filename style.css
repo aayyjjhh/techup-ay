@@ -1,106 +1,56 @@
-{
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Full-page GIF background */
 body {
-  color: #333;
-  background-color: #f8f8f8;
+  background: url('https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHRuOGpnaWZ0ZjZnZHBob2gwaGozMm9iYmZ5Y280cXMxYnRqbGtueiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/nNFQiE5zJC02zeKBvV/giphy.gif') no-repeat center center fixed;
+  background-size: cover;
 }
 
-/* Header styles */
-header {
+/* Overlay for content */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  background-color: #333;
-  padding: 10px;
-  text-align: center;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 1.2em;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-/* Landing page styles */
-.landing-page {
-  width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(to bottom, #e6f7ff, #ffffff);
 }
 
-.animated-image {
-  width: 100%;
-  height: 300px;
-  background: url('path_to_your_animated_image.gif') no-repeat center center;
-  background-size: cover;
-  margin-bottom: 20px;
+/* Content styling */
+.content {
+  color: #fff;
 }
 
 .content h1 {
   font-size: 2.5em;
-  color: #333;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 #visitor-type {
   font-size: 1em;
-  padding: 5px;
-  margin-top: 10px;
-}
-
-/* Info and form sections */
-.info-section {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.info-section h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-}
-
-form label, .project h3 {
-  color: #555;
-}
-
-form input, form textarea, .project {
   padding: 10px;
+  background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
-
-form button, .project button {
-  padding: 10px;
-  color: #fff;
-  background-color: #5ca4a9;
-  border: none;
-  cursor: pointer;
-}
-
-form button:hover, .project button:hover {
-  background-color: #417d80;
-}
-
-/* Project listing styles */
-.project {
-  background-color: #f1f1f1;
-  padding: 15px;
-  margin: 15px 0;
   border-radius: 5px;
-  text-align: left;
 }

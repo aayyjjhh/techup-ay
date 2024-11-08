@@ -3,32 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Submit Your Proposal</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Creator's Portal</title>
+  <link rel="stylesheet" href="style(creator).css">
 </head>
 <body>
 
-  <header>
-    <a href="index.html">Home</a>
+  <header class="header">
+    <!-- Home Button -->
+    <a href="index.html" class="home-btn">Home Page</a>
   </header>
 
-  <section class="info-section">
-    <h2>Submit Your Proposal</h2>
-    <form>
-      <label for="creator-name">Name:</label>
-      <input type="text" id="creator-name" name="creator-name" required>
+  <section class="proposal-section">
+    <h2>Share Your Innovative Project</h2>
+    <p>Fill in the form below to submit your project proposal for potential investors.</p>
+    
+    <form class="proposal-form">
+      <label for="creator-name">Your Name:</label>
+      <input type="text" id="creator-name" name="creator-name" placeholder="Enter your name" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
       <label for="project-title">Project Title:</label>
-      <input type="text" id="project-title" name="project-title" required>
+      <input type="text" id="project-title" name="project-title" placeholder="Enter your project title" required>
 
       <label for="project-description">Project Description:</label>
-      <textarea id="project-description" name="project-description" rows="4" required></textarea>
+      <textarea id="project-description" name="project-description" placeholder="Describe your project" rows="4" required></textarea>
 
       <label for="funding-needed">Funding Needed:</label>
-      <input type="number" id="funding-needed" name="funding-needed" required>
+      <input type="number" id="funding-needed" name="funding-needed" placeholder="Enter the funding needed" required>
+
+      <!-- Additional Requirements Section -->
+      <fieldset>
+        <legend><strong>Additional Requirements</strong></legend>
+
+        <label for="mentoring">
+          <input type="checkbox" id="mentoring" name="mentoring"> 1-1 Mentoring
+        </label><br>
+
+        <label for="technical">
+          <input type="checkbox" id="technical" name="technical"> Technical Expertise
+        </label><br>
+
+        <label for="legal">
+          <input type="checkbox" id="legal" name="legal"> Legal
+        </label><br>
+
+        <label for="hr">
+          <input type="checkbox" id="hr" name="hr"> Human Resources
+        </label><br>
+
+        <label for="finance">
+          <input type="checkbox" id="finance" name="finance"> Finance and Procurement
+        </label><br>
+
+        <label for="capital-expenditure">
+          <input type="checkbox" id="capital-expenditure" name="capital-expenditure"> Capital Expenditure
+        </label><br>
+      </fieldset>
 
       <button type="submit">Submit Proposal</button>
     </form>

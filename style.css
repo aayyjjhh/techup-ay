@@ -54,3 +54,15 @@ p {
   border: none;
   cursor: pointer;
 }
+
+/* Disclaimer Styling */
+footer.disclaimer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 8px;
+  font-size: 0.5em;
+}
